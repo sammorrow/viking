@@ -9,8 +9,10 @@ public class UnitDetails : ScriptableObject
     public Sprite unitPortrait;
     public int healthBase;
     public int healthBonus;
+    public int healthCurrent;
     public int loyaltyBase;
     public int loyaltyBonus;
+    public int loyaltyCurrent;
 
     //TODO: Item system
     public string unitWeapon;
