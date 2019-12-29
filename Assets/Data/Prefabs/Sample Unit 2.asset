@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9eafa7b7ae99f401d9f7609426e2c31e, type: 3}
-  m_Name: Sample Unit 1
+  m_Name: Sample Unit 2
   m_EditorClassIdentifier: 
-  unitName: Paul
-  unitTitle: ' the Quick'
-  unitPortrait: {fileID: 21300000, guid: e12952a8c80bf43179aae320dca4a0b2, type: 3}
-  healthBase: 3
-  healthBonus: 4
-  loyaltyBase: 5
-  loyaltyBonus: 5
-  unitWeapon: Sarcasm
-  unitArmor: Irony
+  unitName: Henry
+  unitTitle: VIII
+  unitPortrait: {fileID: 21300000, guid: 6cf97eb36a00f4f469f104bed5386553, type: 3}
+  healthBase: 8
+  healthBonus: 8
+  loyaltyBase: 8
+  loyaltyBonus: 8
+  unitWeapon: Wives
+  unitArmor: Church

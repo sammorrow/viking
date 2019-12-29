@@ -25,4 +25,9 @@ public class UnitDetails : ScriptableObject
     {
         return loyaltyBase + loyaltyBonus;
     }
+
+    public string GetFullName()
+    {
+        return unitName + " " + unitTitle;
+    }
 }

@@ -1,17 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewMonoBehaviour : MonoBehaviour
+public class SendUnitDetails : MonoBehaviour
 {
-    // Use this for initialization
-    void Start()
-    {
+    public UnitDetails unit;
+    private UnitCardImpl unitCard;
 
+    private void Start()
+    {
+        unitCard = GameObject.FindWithTag("theonlyunitcard").GetComponent<UnitCardImpl>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
+    public void SendData(UnitDetails u)
+    {
+        unitCard.LoadData(u, transform.position.x, transform.position.y);
+    }
+
+    void OnMouseDown()
+    {
+        Debug.Log("Sprite Clicked");
+        this.SendData(unit);
     }
 }
