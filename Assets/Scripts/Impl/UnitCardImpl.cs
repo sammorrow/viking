@@ -9,7 +9,7 @@ public class UnitCardImpl : MonoBehaviour
 
     public Text fullName;
     public Image portrait;
-    public Text health;
+    public HealthSpriteController healthController;
     public Text loyalty;
     public Text armor;
     public Text weapon;
@@ -28,11 +28,13 @@ public class UnitCardImpl : MonoBehaviour
         details = u;
 
         fullName.text = u.GetFullName();
-        health.text = u.GetHealthTotal().ToString();
         loyalty.text = u.GetLoyaltyTotal().ToString();
         portrait.sprite = u.unitPortrait;
         armor.text = u.unitArmor;
         weapon.text = u.unitWeapon;
+
+        this.healthController.SetHealth(u.healthCurrent, u.GetHealthTotal());
+
 
         transform.position = new Vector3(x + 1, y + 3, transform.position.z);
     }

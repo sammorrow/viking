@@ -17,7 +17,9 @@ MonoBehaviour:
   unitPortrait: {fileID: 21300000, guid: e12952a8c80bf43179aae320dca4a0b2, type: 3}
   healthBase: 3
   healthBonus: 4
+  healthCurrent: 2
   loyaltyBase: 5
   loyaltyBonus: 5
+  loyaltyCurrent: 0
   unitWeapon: Sarcasm
   unitArmor: Irony
